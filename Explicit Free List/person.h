@@ -13,10 +13,9 @@ public:
 	Person(const char* name, unsigned int id, unsigned char age);
 
 private:
-
 	unsigned char 	m_age;
 	unsigned int 	m_id;
-	char 		m_fullname[32];
+	char 			m_fullname[32];
 };
 
 

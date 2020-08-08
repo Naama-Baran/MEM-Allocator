@@ -19,7 +19,7 @@ private:
 	
 	static Person* 	s_pool;
 	static Person* 	s_firstfree;
-	Person 		m_person;
+	Person 			m_person;
 };
 
 inline void PersonAllocator::operator delete(void* ptr)

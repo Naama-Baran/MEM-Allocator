@@ -3,7 +3,6 @@
 
 void testPersonAllocator()
 {
-	
 	//-------------------using the new keyword/operator
 	PersonAllocator *p1 = (PersonAllocator*)::operator new(sizeof(PersonAllocator));
 	*p1 = PersonAllocator("Naama Baran", 211355847, 20);

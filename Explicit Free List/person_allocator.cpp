@@ -13,7 +13,7 @@ static void initFreeList(Person* memory_pool)
 		*(Person**)(memory_pool + i) = memory_pool + i + 1;
 	}
 	
-	*(Person**)(memory_pool+i-1)=NULL;
+	*(Person**)(memory_pool+i-1) = NULL;
 }
 
 static Person* initMemoryAlloc()
