@@ -61,7 +61,7 @@ MemoryAllocator* MemoryAllocator_init (void *memoryPool, size_t size)
 	size -= ALIGN - (size)%ALIGN;
 	*((size_t*)(heap->memoryPool)) = size;
 	heap->size = size;
-	//printf("%lu\n",*((size_t*)(heap->memoryPool)));
+	
 	return heap;
 }
 
@@ -83,8 +83,6 @@ void * MemoryAllocator_allocate (MemoryAllocator* allocator, size_t size)
 	while (sizeRemain >= size)
 	{
 		curSize = get_size(ptr);
-		//printf("mataData: %lu\n", curSize);
-		//printf("size: %lu\nsizeRemain: %lu\n", size, sizeRemain);
 		if (is_allocated(ptr))
 		{
 			sizeRemain -= get_size(ptr);

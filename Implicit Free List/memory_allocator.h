@@ -3,7 +3,6 @@
 
 typedef struct MemoryAllocator MemoryAllocator;
 
-
 /* memoryPool is a ptr to an already-existing large memory
 block */
 MemoryAllocator* 	MemoryAllocator_init (void *memoryPool, size_t size);

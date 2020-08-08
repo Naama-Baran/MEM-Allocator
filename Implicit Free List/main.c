@@ -5,7 +5,6 @@
 
 #include "memory_allocator.h"
 
-
 void test_implicit_free_list()
 {
 	void* memoryPool = malloc(100);
